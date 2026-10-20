@@ -15,10 +15,10 @@
 
 -   **Project title:** HypoGuard Twin --- AI-powered digital twin
     prototype for early hypoglycaemia-event prediction
--   **Team name:** `[ADD OFFICIAL TEAM NAME]`
+-   **Team name:** `Nipun'
 -   **Team leader:** Gaurav Khandelwal
     `[VERIFY spelling and required format]`
--   **Team members and roles:**
+
     `[ADD ALL MEMBERS AND ROLES; if solo, confirm solo participation is permitted]`
 -   **College/institution:** JECRC Foundation, Jaipur, Rajasthan, India
     `[VERIFY official form wording]`
