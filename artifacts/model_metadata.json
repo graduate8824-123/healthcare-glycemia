@@ -1,0 +1,112 @@
+{
+  "model_version": "rf-v0.1",
+  "created_at": "2026-10-20T07:54:59.781771+00:00",
+  "random_seed": 2026,
+  "feature_columns": [
+    "glucose_current",
+    "glucose_change_5m",
+    "glucose_change_10m",
+    "glucose_change_15m",
+    "glucose_mean_30m",
+    "glucose_min_30m",
+    "glucose_max_30m",
+    "glucose_std_30m",
+    "glucose_rate_mgdl_per_min",
+    "minutes_since_previous",
+    "heart_rate_current",
+    "heart_rate_change_5m",
+    "steps_30m",
+    "carbs_30m",
+    "missing_heart_rate",
+    "irregular_previous_interval"
+  ],
+  "split": {
+    "train": [
+      "SYN-006",
+      "SYN-004",
+      "SYN-005",
+      "SYN-003"
+    ],
+    "validation": [
+      "SYN-002"
+    ],
+    "test": [
+      "SYN-001"
+    ]
+  },
+  "training_patients": 4,
+  "training_observations": 836,
+  "training_data_mode": "SYNTHETIC DEMONSTRATION",
+  "label_prevalence_train": 0.11961722488038277,
+  "calibration": "not calibrated; uncalibrated model estimate",
+  "feature_importance": {
+    "glucose_current": 0.19414312399820283,
+    "glucose_mean_30m": 0.14902332520553138,
+    "glucose_min_30m": 0.13893921211383686,
+    "glucose_change_15m": 0.127143461840276,
+    "glucose_std_30m": 0.08906171801260421,
+    "glucose_max_30m": 0.07833611838744506,
+    "glucose_change_10m": 0.06658090325746849,
+    "steps_30m": 0.05674287368830304,
+    "glucose_rate_mgdl_per_min": 0.037464518270402036,
+    "glucose_change_5m": 0.031934070348713386,
+    "heart_rate_current": 0.012787141280240538,
+    "heart_rate_change_5m": 0.010005289845635262,
+    "carbs_30m": 0.006056835820358416,
+    "missing_heart_rate": 0.00012537746370407097,
+    "minutes_since_previous": 0.0,
+    "irregular_previous_interval": 0.0
+  },
+  "evaluation": {
+    "test_observations": 209,
+    "positive_prevalence": 0.08133971291866028,
+    "precision": 0.8571428571428571,
+    "recall": 0.7058823529411765,
+    "f1": 0.7741935483870968,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        190,
+        2
+      ],
+      [
+        5,
+        12
+      ]
+    ],
+    "false_positives": 2,
+    "false_negatives": 5,
+    "roc_auc": 0.9908088235294118,
+    "pr_auc": 0.9041132130683215,
+    "baseline_prior": {
+      "test_observations": 209,
+      "positive_prevalence": 0.08133971291866028,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix_labels": [
+        0,
+        1
+      ],
+      "confusion_matrix": [
+        [
+          192,
+          0
+        ],
+        [
+          17,
+          0
+        ]
+      ],
+      "false_positives": 0,
+      "false_negatives": 17,
+      "roc_auc": 0.5,
+      "pr_auc": 0.08133971291866028
+    },
+    "test_patients": 1,
+    "evaluation_note": "Synthetic demonstration evaluation only; not clinical evidence."
+  }
+}
